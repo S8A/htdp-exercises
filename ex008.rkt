@@ -225,22 +225,16 @@
 -1 -1 2 1 #"\0"
 0 71 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 1.0 1.0 1.0 0 100 0 0 0 0 -1
--1 4 1 #"\0"
-0 -1 1 #"\0"
-1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
-17 1 #"\0"
-0 -1 1 #"\0"
-1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
-24 1 #"\0"
-0 -1 1 #"\0"
-1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
-15 1 #"\0"
-0 -1 1 #"\0"
-1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
-44 1 #"\0"
+-1 44 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
 46 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
+4 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
+24 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 255 255 255 -1 -1
 0 1 #"\0"
@@ -258,7 +252,13 @@
 0 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 93 -1 -1 0 1 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 0 0 175 0 0
-0 -1 -1           0 62 0 4 3 85
+0 -1 -1 17 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0.0 0.0 0.0 0.0 0.0 0.0 0 0 0 255
+255 255 -1 -1 15 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0.0 0.0 0.0 0.0 0.0 0.0 0 0 0 255
+255 255 -1 -1           0 64 0 4 3 85
 (
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
@@ -268,17 +268,17 @@
  #";; about the language level of this file in a form that our tools ca"
  #"n easily process."
 ) 0 0 4 29 1 #"\n"
-0 0 4 3 79
+0 0 4 3 80
 (
- #"#reader(lib \"htdp-beginner-reader.ss\" \"lang\")((modname ex8) (rea"
- #"d-case-sensitiv"
-) 0 0 4 3 250
+ #"#reader(lib \"htdp-beginner-reader.ss\" \"lang\")((modname ex008) (r"
+ #"ead-case-sensiti"
+) 0 0 4 3 251
 (
- #"e #t) (teachpacks ((lib \"image.rkt\" \"teachpack\" \"2htdp\") (lib "
- #"\"universe.rkt\" \"teachpack\" \"2htdp\"))) (htdp-settings #(#t cons"
- #"tructor repeating-decimal #f #t none #f ((lib \"image.rkt\" \"teachp"
- #"ack\" \"2htdp\") (lib \"universe.rkt\" \"teachpack\" \"2htdp\")) #f)"
- #"))"
+ #"ve #t) (teachpacks ((lib \"image.rkt\" \"teachpack\" \"2htdp\") (lib"
+ #" \"universe.rkt\" \"teachpack\" \"2htdp\"))) (htdp-settings #(#t con"
+ #"structor repeating-decimal #f #t none #f ((lib \"image.rkt\" \"teach"
+ #"pack\" \"2htdp\") (lib \"universe.rkt\" \"teachpack\" \"2htdp\")) #f"
+ #")))"
 ) 0 0 4 29 1 #"\n"
 0 0 24 3 1 #"("
 0 0 15 3 6 #"define"
@@ -1050,7 +1050,9 @@
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"  ("
-0 0 15 3 4 #"cond"
+0 0 15 3 1 #"c"
+0 0 15 3 1 #"o"
+0 0 15 3 2 #"nd"
 0 0 24 3 3 #" [("
 0 0 14 3 1 #">"
 0 0 24 3 2 #" ("
