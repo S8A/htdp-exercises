@@ -71,10 +71,10 @@
 ; Increments the tick counter (cw) one unit.
 (define (tock cw) (add1 cw))
  
-; WorldState String -> WorldState 
+; WorldState KeyEvent -> WorldState 
 ; Changes the state of the world according to the key (ke) pressed.
 ; If "space" is pressed, restart. Otherwise, continue.
-(define (keystroke-handler cw ke) (if (string=? ke " ") 0 cw))
+(define (keystroke-handler cw ke) (if (key=? ke " ") 0 cw))
  
 ; WorldState -> Boolean
 ; Ends the program if the car exits the world.

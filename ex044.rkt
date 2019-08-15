@@ -77,13 +77,13 @@
 (check-expect (end? 326) #true)
 (define (end? x) (>= x (+  WIDTH-OF-WORLD (/ BODY-LENGTH 2))))
 
-; WorldState Number Number String -> WorldState
+; WorldState Number Number MouseEvent -> WorldState
 ; Places the car at x-mouse if the given me is "button-down"
 (check-expect (hyper 21 10 20 "enter") 21)
 (check-expect (hyper 42 10 20 "button-down") 10)
 (check-expect (hyper 42 10 20 "move") 42)
 (define (hyper x-position-of-car x-mouse y-mouse me)
-  (if (string=? me "button-down") x-mouse x-position-of-car))
+  (if (mouse=? me "button-down") x-mouse x-position-of-car))
 
 
 ; ..:: World ::..

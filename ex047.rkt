@@ -80,7 +80,7 @@
       MAX-SCORE
       (+ hl increase)))
 
-; Happiness String -> Happiness
+; Happiness KeyEvent -> Happiness
 ; Increases happiness by 1/5 if the down arrow key is pressed,
 ; or by 1/3 if the up arrow is pressed; otherwise, ignore keystrokes.
 (check-expect (keystroke-handler 0 "down") 20)
@@ -90,8 +90,8 @@
 (check-expect (keystroke-handler 100 "up") 100)
 (define (keystroke-handler hl ke)
   (cond
-    [(string=? ke "down") (increase-happiness hl SMALL-INCREASE)]
-    [(string=? ke "up") (increase-happiness hl BIG-INCREASE)]
+    [(key=? ke "down") (increase-happiness hl SMALL-INCREASE)]
+    [(key=? ke "up") (increase-happiness hl BIG-INCREASE)]
     [else hl]))
 
 ; ..:: Happiness Gauge ::..
