@@ -35,12 +35,26 @@
 ; String -> List-of-strings
 ; finds all words that the letters of some given word spell
 (define (alternative-words s)
-  (in-dictionary (words->strings (arrangements (string->word s)))))
+  (create-set (in-dictionary (words->strings (arrangements (string->word s))))))
 
 (check-member-of (alternative-words "cat")
                  (list "act" "cat") (list "cat" "act"))
  
 (check-satisfied (alternative-words "rat") all-words-from-rat?)
+
+
+; List-of-strings -> List-of-strings
+; creates a copy of the list without repetitions
+(define (create-set los)
+  (cond
+    [(empty? los) '()]
+    [(cons? los)
+     (if (member? (first los) (create-set (rest los)))
+         (create-set (rest los))
+         (cons (first los) (create-set (rest los))))]))
+
+(check-expect (create-set (list "a" "b" "c")) (list "a" "b" "c"))
+(check-expect (create-set (list "a" "b" "c" "b" "a")) (list "c" "b" "a"))
 
 
 ; List-of-strings -> List-of-strings
