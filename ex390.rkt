@@ -40,17 +40,18 @@
 ; .: Functions :.
 
 ; TOS Path -> TOS
-; Follows the given path along the given tree's branches, until
-; the end of a branch is reached
+; Follows the given path along the given tree's branches
 (define (tree-pick tree path)
   (cond
-    [(symbol? tree) tree]
-    [(branch? tree)
+    [(and (symbol? tree) (empty? path)) tree]
+    [(and (symbol? tree) (cons? path)) tree]
+    [(and (branch? tree) (empty? path)) tree]
+    [(and (branch? tree) (cons? path))
      (local ((define direction (first path)))
        (tree-pick (cond
-                    [(symbol=? direction 'left) (branch-left tree)]
-                    [(symbol=? direction 'right) (branch-right tree)])
-                  (rest path)))]))
+                     [(symbol=? direction 'left) (branch-left tree)]
+                     [(symbol=? direction 'right) (branch-right tree)])
+                   (rest path)))]))
 
 (check-expect (tree-pick tos0 p0) tos0)
 (check-expect (tree-pick tos1 p1) 'a)
@@ -58,3 +59,4 @@
 (check-expect (tree-pick tos3 p3) 'b)
 (check-expect (tree-pick tos4 p4) 'c)
 (check-expect (tree-pick tos5 p5) 'd)
+(check-expect (tree-pick tos5 p4) (make-branch 'e 'f))
