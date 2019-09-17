@@ -1,0 +1,143 @@
+> (test-sort sort< TEST25)
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+
+> (test-sort quick-sort< TEST25)
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+cpu time: 0 real time: 0 gc time: 0
+
+> (test-sort sort< TEST50)
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+
+> (test-sort quick-sort< TEST50)
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 1 real time: 0 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+cpu time: 0 real time: 1 gc time: 0
+
+> (test-sort sort< TEST75)
+cpu time: 13 real time: 13 gc time: 10
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 2 real time: 2 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 2 real time: 1 gc time: 0
+cpu time: 2 real time: 2 gc time: 0
+cpu time: 2 real time: 2 gc time: 0
+cpu time: 2 real time: 2 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+
+> (test-sort quick-sort< TEST75)
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+
+> (test-sort sort< TEST100)
+cpu time: 2 real time: 2 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+cpu time: 4 real time: 4 gc time: 0
+cpu time: 3 real time: 3 gc time: 0
+
+> (test-sort quick-sort< TEST100)
+cpu time: 2 real time: 1 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 1 real time: 1 gc time: 0
+cpu time: 2 real time: 1 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 2 real time: 1 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 2 real time: 1 gc time: 0
+cpu time: 1 real time: 2 gc time: 0
+cpu time: 2 real time: 1 gc time: 0
+
+> (test-sort sort< TEST1000)
+cpu time: 299 real time: 299 gc time: 14
+cpu time: 323 real time: 324 gc time: 28
+cpu time: 307 real time: 308 gc time: 14
+cpu time: 296 real time: 296 gc time: 13
+cpu time: 311 real time: 313 gc time: 16
+cpu time: 324 real time: 325 gc time: 22
+cpu time: 317 real time: 319 gc time: 12
+cpu time: 334 real time: 336 gc time: 23
+cpu time: 320 real time: 320 gc time: 11
+cpu time: 296 real time: 296 gc time: 9
+
+> (test-sort quick-sort< TEST1000)
+cpu time: 21 real time: 21 gc time: 0
+cpu time: 19 real time: 19 gc time: 0
+cpu time: 21 real time: 21 gc time: 0
+cpu time: 23 real time: 23 gc time: 0
+cpu time: 36 real time: 36 gc time: 10
+cpu time: 23 real time: 23 gc time: 0
+cpu time: 23 real time: 23 gc time: 0
+cpu time: 26 real time: 26 gc time: 0
+cpu time: 25 real time: 25 gc time: 0
+cpu time: 22 real time: 22 gc time: 0
+
+> (test-sort sort< TEST10000)
+cpu time: 31668 real time: 31783 gc time: 2279
+cpu time: 31501 real time: 31605 gc time: 2157
+cpu time: 30754 real time: 30877 gc time: 1800
+cpu time: 33763 real time: 33880 gc time: 4605
+cpu time: 28973 real time: 29113 gc time: 332
+cpu time: 28657 real time: 28710 gc time: 323
+cpu time: 32025 real time: 32152 gc time: 2407
+cpu time: 31238 real time: 31372 gc time: 2286
+cpu time: 31241 real time: 31348 gc time: 2407
+cpu time: 30489 real time: 30612 gc time: 1796
+
+> (test-sort quick-sort< TEST10000)
+cpu time: 413 real time: 417 gc time: 38
+cpu time: 332 real time: 333 gc time: 15
+cpu time: 342 real time: 344 gc time: 11
+cpu time: 384 real time: 387 gc time: 17
+cpu time: 310 real time: 311 gc time: 5
+cpu time: 332 real time: 334 gc time: 6
+cpu time: 318 real time: 319 gc time: 17
+cpu time: 316 real time: 318 gc time: 6
+cpu time: 336 real time: 337 gc time: 11
+cpu time: 330 real time: 332 gc time: 11
