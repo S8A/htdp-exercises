@@ -1,0 +1,13 @@
+Uf. Tenemos problemas para encontrar ese sitio.
+
+No podemos conectar al servidor en htdp.org.
+
+Si esa dirección es correcta, aquí hay otras
+tres cosas que puede probar:
+
+- Vuelva a intentarlo más tarde.
+- Compruebe su conexión de red.
+- Si está conectado a través de un cortafuegos,
+compruebe que Firefox tiene permiso para acceder
+a la web.
+
