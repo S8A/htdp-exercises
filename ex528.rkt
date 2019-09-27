@@ -15,7 +15,7 @@
 ; observer line and draws the Bezier curves of each half; stops
 ; when the distance between the observer point and the midpoint
 ; of the foci is smaller than the threshold t
-    ; termination: is never reached if t is 0.
+; termination: is never reached if t is 0.
 (define (bezier s a b c t)
   (cond
     [(too-small? a b c t)
